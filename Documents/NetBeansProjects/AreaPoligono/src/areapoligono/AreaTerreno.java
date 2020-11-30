@@ -18,9 +18,10 @@ public class AreaTerreno {
         
         // Declaracion e inicializacion de variables
         double ac, b, ar, at, area;
+        int metrocua;
+        ac = 0; b = 0; ar = 0; at = 0; area = 0; metrocua = 0;
         
-        ac = 0; b = 0; ar = 0; at = 0; area = 0;
-        
+        System.out.println("**PROGRAMA PARA CALCULAR EL ÁREA DE UN TERRENO Y SU COSTO**");
         // Lectura de datos 
         
         System.out.println(" Ingrese la altura del rectángulo");
@@ -36,6 +37,17 @@ public class AreaTerreno {
         
         // Salida
         System.out.println(" El área del terreno es:" +area+", compuesto por un triangulo y un rectangulo de altura\n" +ac+", y un triangulo y rectangulo de base " +b);
+        
+        System.out.println("***PRECIO DEL TERRENO***");
+        System.out.println(" Introduzca el precio por metro cuadrado");
+        metrocua = leer.nextInt();
+        area= area*metrocua;
+        System.out.println(" El costo total del terreno es: "+area);
+        
     }
+    
+    
+    
+    
     
 }
